@@ -39,7 +39,6 @@ body {
   background-color: hsl(30, 54%, 90%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -53,7 +52,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
-  max-width: 500px;
+  max-width: 32rem;
   width: 90%;
   margin-top: 5rem;
   padding: 1.5rem;
@@ -72,20 +71,55 @@ img {
 
 p {
   font-family: "Outfit", sans-serif;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: hsl(30, 10%, 34%);
+  margin-top: auto;
+  padding-left: 0.5rem;
 }
 
 .prep {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  min-width: 31rem;
   background-color: hsl(330, 100%, 98%);
   border-radius: 1rem;
+  margin: 1rem 0.5rem;
 }
 .prep li {
   font-family: "Outfit", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+
+.prep li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients ul {
+  padding-left: 1.9rem;
+}
+
+.ingredients li {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  color: hsl(24, 5%, 18%);
+  padding-left: 0.7rem;
+}
+
+.ingredients li::marker {
+  color: hsl(14, 45%, 36%);
 }
 
 h1,
 h2 {
   font-family: "Young Serif", sans-serif;
+  padding-left: 0.5rem;
 }
 
 h2 {
@@ -95,6 +129,8 @@ h2 {
 h3 {
   font-family: "Outfit", sans-serif;
   color: hsl(332, 51%, 32%);
+  padding-left: 1.5rem;
+  margin-bottom: 0;
 }
 
 .attribution {
