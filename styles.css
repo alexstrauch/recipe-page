@@ -66,7 +66,7 @@ body {
 
 img {
   border-radius: 1rem;
-  width: 30rem;
+  width: 31rem;
 }
 
 p {
@@ -143,11 +143,6 @@ hr {
   padding: auto;
 }
 
-tr {
-  font-family: "Outfit", sans-serif;
-  border-bottom: 1px solid hsl(30, 18%, 87%);
-}
-
 h1,
 h2 {
   font-family: "Young Serif", sans-serif;
@@ -163,6 +158,40 @@ h3 {
   color: hsl(332, 51%, 32%);
   padding-left: 1.5rem;
   margin-bottom: 0;
+}
+
+table {
+  margin-left: 0.5rem;
+  border-collapse: collapse;
+  width: 30rem;
+}
+
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr {
+  font-family: "Outfit", sans-serif;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrients {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%);
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.4rem;
+}
+
+.nutrition-value {
+  color: hsl(14, 45%, 36%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+  padding-left: 6.5rem;
 }
 
 .attribution {
