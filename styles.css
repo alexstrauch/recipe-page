@@ -42,6 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -59,8 +60,8 @@ body {
 }
 
 .header-image {
-  display: flex;
-  align-self: center;
+  display: block;
+
   margin: 0 auto;
 }
 
@@ -161,18 +162,18 @@ h3 {
 }
 
 table {
+  font-family: "Outfit", sans-serif;
   margin-left: 0.5rem;
   border-collapse: collapse;
   width: 30rem;
 }
 
-td {
+tr:not(:last-child) td {
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-tr {
-  font-family: "Outfit", sans-serif;
-  border-bottom: 1px solid hsl(30, 18%, 87%);
+tr:last-child td {
+  border: none;
 }
 
 .nutrients {
@@ -204,4 +205,16 @@ tr {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
 }
